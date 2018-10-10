@@ -20,14 +20,16 @@ Now you will have to install the Node modules so cd into the project folder name
 After you have done this, type `npm install` and follow that with `npm run dev` to 
 deploy the site for testing. 
 
-#3# Deploy Site
+### Deploy Site
 To deploy the site, you must first alter the configuration so Webpack builds the code in a `docs/` 
 directory instead of the  `dist/` directory which is the default. To do this you must open the
 `config/index.js` file and change
 `index: path.resolve(__dirname, '../dist/index.html'),
  assetsRoot: path.resolve(__dirname, '../dist'),
  assetsPublicPath: '/',`
+ 
  to 
+ 
 `index: path.resolve(__dirname, '../docs/index.html'),
  assetsRoot: path.resolve(__dirname, '../docs'),
  assetsPublicPath: '',`
